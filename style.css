@@ -3,7 +3,12 @@
   padding: 0;
   background-color: #091b29;
 }
-
+#top-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 #nav-1 {
   float: left;
   padding: 0;
@@ -89,7 +94,7 @@
   font-size: 50px;
   width: 24em;
   margin: 0;
-  border-right: 2px solid rgba(255,255,255,.75);
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
   /* text-align: center; */
   white-space: nowrap;
   overflow: hidden;
@@ -101,7 +106,7 @@
     blinkingCursor 500ms steps(50, end) infinite normal;
 }
 @keyframes typewriter {
-   0% {
+  0% {
     width: 0;
   }
   33% {
@@ -130,6 +135,7 @@
   margin-bottom: 20px;
 }
 #div-2 {
+  padding-top: 30px;
   margin-top: 60px;
   display: flex;
 }
@@ -170,19 +176,19 @@
   border-color: black;
   box-shadow: -2px -2px yellow;
 }
-.h2-skill{
+.h2-skill {
   color: #fff;
   text-align: center;
   padding: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.skill-container{
+.skill-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-.skill-container box{
+.skill-container box {
   background-color: #091b29;
   border: 2px solid white;
   height: 15rem;
@@ -192,27 +198,73 @@
   border-radius: 5%;
   cursor: zoom-in;
   box-shadow: -2px -5px 5px white;
-  
 }
-.skill-container img{
+.skill-container img {
   height: 10rem;
 }
-.skill-container p{
+.skill-container p {
   text-align: center;
   background-color: #091b29;
   color: #fff;
   padding-top: 30px;
   font-size: 20px;
-  font-weight:bold ;
+  font-weight: bold;
 }
-.skill-container box:hover{
+.skill-container box:hover {
   transform: scale(1.15);
-  box-shadow: 6px 5px 10px yellowgreen
+  box-shadow: 6px 5px 10px yellowgreen;
 }
 
 @container card (max-width: 400px) {
-  .skill-container{
+  .skill-container {
     flex-direction: row;
   }
 }
 
+.footer {
+  padding-top: 5rem;
+  color: #fff;
+  text-align: center;
+}
+#button_text {
+  color: #000000;
+  padding: 11px;
+  border-radius: 20px;
+  font-size: 15px;
+  width: 13rem;
+  margin: 10px;
+  background-color: rgb(42, 227, 252);
+}
+#button_text:hover {
+  background-color: #091b29;
+  border-color: rgb(42, 227, 252);
+  color: rgb(42, 227, 252);
+  box-shadow: 2px 2px yellow;
+}
+#text {
+  font-size: larger;
+}
+#email_footer {
+  padding: 25px;
+}
+#phoneNo_footer {
+  padding-bottom: 20px;
+}
+.fa-regular {
+  color: white;
+  padding-right: 10px;
+}
+.fa-solid {
+  color: white;
+  padding-right: 10px;
+}
+.fa-brands {
+  font-size: 30px;
+  color: #fff;
+  padding: 10px;
+  padding-bottom: 5rem;
+}
+.copyRight {
+  border: 2px solid white;
+  padding-bottom: 10px;
+}
