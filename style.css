@@ -183,6 +183,8 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.skill_main{padding-top: 4rem;
+}
 .skill-container {
   display: flex;
   flex-direction: row;
@@ -222,7 +224,7 @@
 }
 
 .footer {
-  padding-top: 5rem;
+  padding-top: 12rem;
   color: #fff;
   text-align: center;
 }
@@ -243,6 +245,7 @@
 }
 #text {
   font-size: larger;
+  padding-top: 20px;
 }
 #email_footer {
   padding: 25px;
